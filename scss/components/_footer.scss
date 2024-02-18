@@ -116,12 +116,8 @@
 			}
 			li{
 				position: relative;
-				width: calc(100%/4);
 				height: auto;
 				padding: 2.1% 0;
-				@include min(768){
-					width: calc(100%/4);
-				}
 				&:first-child{
 					&::before{
 						content: "";
@@ -171,6 +167,24 @@
 				&.-grayOutItem{
 					pointer-events: none;
 					span{opacity: .2;}
+				}
+			}
+			&.-col6{
+				li{
+					width: calc(100%/3);
+					@include min(768){width: calc(100%/6);}
+				}
+			}
+			&.-col7{
+				li{
+					width: calc(100%/4);
+					@include min(768){width: calc(100%/7);}
+				}
+			}
+			&.-col8{
+				li{
+					width: calc(100%/4);
+					@include min(768){width: calc(100%/8);}
 				}
 			}
 		}

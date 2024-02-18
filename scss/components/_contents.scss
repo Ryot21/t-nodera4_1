@@ -382,6 +382,26 @@
 					z-index: 1;
 				}
 			}
+
+			// オリジナル
+			&.-f-message{
+				background: rgba(255, 255, 255, 0.445);
+				@include min(768){
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 100%;
+					height: auto;
+				}
+				.c-flex{
+					width: 85%;
+					margin: auto;
+					@include min(768){
+						width: 50%;
+						max-width: 650px;
+					}
+				}
+			}
 		}
 	}
 }
