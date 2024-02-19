@@ -4067,15 +4067,24 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-imgBg .c-contentsBox.-f-message {
+  left: 5%;
+  width: 90%;
+  height: auto;
   background: rgba(255, 255, 255, 0.445);
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-f-message {
+    top: 30%;
+    right: 5%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.726);
+  }
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-f-message {
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0%;
     width: 100%;
-    height: auto;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-f-message .c-flex {
