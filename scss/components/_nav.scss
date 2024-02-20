@@ -136,10 +136,10 @@
 				@include min(768){transform: scale(1.05);}
 				@include min(1400){transform: scale(1.1);}
 				a{
-					color: $site-color03;
+					color: $site-color02;
 					font-weight: bold;
 					pointer-events: none;
-					span{color: $site-color03;}
+					span{color: $site-color02;}
 				}
 				&::after{
 					content: "";
@@ -301,16 +301,19 @@
 		// アクティブ時
 		&.-active{
 			pointer-events: none;
+			a{color: $site-color02;}
 			span{
+				color: $site-color02;
 				&::after{
 					width: 100%;
 					height: 1px;
-					background: $main-color--b;
+					background: $site-color02;
 				}
 			}
 		}
 		&:hover{
 			span{
+				color: $site-color01;
 				&::after{
 					width: 100%;
 					background: $site-color01;
@@ -319,6 +322,7 @@
 		}
 		span{
 			position: relative;
+			transition: all 1s;
 			&::after{
 				content: "";
 				position: absolute;

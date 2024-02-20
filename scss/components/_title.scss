@@ -21,7 +21,7 @@
         width: 100%;
         max-width: 1100px;
         height: 1px;
-        background: $site-color02;
+        background: $site-color04;
         @include min(768){
             bottom: -30px;
         }
@@ -37,6 +37,10 @@
     &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}
     &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
     &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}
+    &.-owner{&::before{content: "OWNER VOICE"; white-space: nowrap;}}
+
+
+
 
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}
 }
@@ -59,14 +63,15 @@
             left: 0%;
             transform: translateY(-50%);
             @include min(768){
+                top: 53%;
                 left: 0;
-                width: 25px;
-                height: 25px;
+                // width: 25px;
+                // height: 25px;
             }
             @include min(1400){
                 top: 56%;
-                width: 30px;
-                height: 30px;
+                // width: 30px;
+                // height: 30px;
             }
         }
     }
