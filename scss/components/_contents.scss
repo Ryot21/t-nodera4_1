@@ -215,15 +215,21 @@
 						&::after{
 							position: absolute;
 							top: 120%;
-							left: 70%;
+							left: 50%;
 							transform: translate(-50%,-50%);
 							font-size: 14px;
+							width: 100%;
+							text-align: center;
 						}
 					}
 					//　タイトル >  コンセプトページ
 					&.-concept{&::after{content: "コンセプト";}}
 					&.-layout{&::after{content: "レイアウト";}}
 					&.-plan{&::after{content: "プラン";}}
+					&.-freeplan{
+						&::after{content: "自由設計";}
+						&.-f-title_r{left: 80%;}
+					}
 					&.-equipment{&::after{content: "設備・仕様";}}
 					&.-location{&::after{content: "周辺環境";}}
 

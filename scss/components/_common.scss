@@ -27,6 +27,10 @@
     width: 90%;
     margin: auto;
 }
+.w55{
+    width: 55%;
+    margin: auto;
+}
 .w95s{
     @include max(768){
         width: 95% !important;

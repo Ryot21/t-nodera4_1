@@ -27,6 +27,7 @@
         }
     }
     &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}
+    &.-plan{&::before{content: "PLAN"; white-space: nowrap;}}
     &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}
     &.-gaikou{&::before{content: "EXTERIOR";}}
     &.-kitchen{&::before{content: "KITCHEN";}}

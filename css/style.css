@@ -2635,6 +2635,11 @@ button.swiper-pagination-bullet {
   margin: auto;
 }
 
+.w55 {
+  width: 55%;
+  margin: auto;
+}
+
 @media (768px >= width) {
   .w95s {
     width: 95% !important;
@@ -3883,9 +3888,11 @@ button.swiper-pagination-bullet {
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r::after {
     position: absolute;
     top: 120%;
-    left: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14px;
+    width: 100%;
+    text-align: center;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-concept::after {
     content: "コンセプト";
@@ -3895,6 +3902,12 @@ button.swiper-pagination-bullet {
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-plan::after {
     content: "プラン";
+  }
+  .c-contents.-f-view .c-contentsBox.-f-title.-freeplan::after {
+    content: "自由設計";
+  }
+  .c-contents.-f-view .c-contentsBox.-f-title.-freeplan.-f-title_r {
+    left: 80%;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-equipment::after {
     content: "設備・仕様";
@@ -4138,6 +4151,10 @@ button.swiper-pagination-bullet {
 }
 .c-contents_title.-layout::before {
   content: "LAYOUT PLAN / PLOT PLAN";
+  white-space: nowrap;
+}
+.c-contents_title.-plan::before {
+  content: "PLAN";
   white-space: nowrap;
 }
 .c-contents_title.-house-layout::before {
