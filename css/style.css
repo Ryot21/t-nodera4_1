@@ -226,6 +226,12 @@ h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.
 h1.-color02, h2.-color02, h3.-color02, h4.-color02, h5.-color02, h6.-color02, p.-color02, a.-color02, span.-color02, label.-color02, button.-color02 {
   color: #b5142c;
 }
+h1.-color03, h2.-color03, h3.-color03, h4.-color03, h5.-color03, h6.-color03, p.-color03, a.-color03, span.-color03, label.-color03, button.-color03 {
+  color: #e996a1;
+}
+h1.-color04, h2.-color04, h3.-color04, h4.-color04, h5.-color04, h6.-color04, p.-color04, a.-color04, span.-color04, label.-color04, button.-color04 {
+  color: #707070;
+}
 h1.-house_c01, h2.-house_c01, h3.-house_c01, h4.-house_c01, h5.-house_c01, h6.-house_c01, p.-house_c01, a.-house_c01, span.-house_c01, label.-house_c01, button.-house_c01 {
   color: #b6b343;
 }
@@ -240,7 +246,7 @@ h1.-house_c04, h2.-house_c04, h3.-house_c04, h4.-house_c04, h5.-house_c04, h6.-h
 }
 h1.-grayOut, h2.-grayOut, h3.-grayOut, h4.-grayOut, h5.-grayOut, h6.-grayOut, p.-grayOut, a.-grayOut, span.-grayOut, label.-grayOut, button.-grayOut {
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 h1.-grayOut a, h2.-grayOut a, h3.-grayOut a, h4.-grayOut a, h5.-grayOut a, h6.-grayOut a, p.-grayOut a, a.-grayOut a, span.-grayOut a, label.-grayOut a, button.-grayOut a {
   pointer-events: none;
@@ -2602,6 +2608,10 @@ button.swiper-pagination-bullet {
     max-width: none;
   }
 }
+.luminous img {
+  pointer-events: auto !important;
+}
+
 @media (width >= 768px) {
   .w1100 {
     width: 100%;
@@ -3912,6 +3922,17 @@ button.swiper-pagination-bullet {
   .c-contents.-f-view .c-contentsBox.-f-title.-equipment::after {
     content: "設備・仕様";
   }
+  .c-contents.-f-view .c-contentsBox.-f-title.-equipment.-f-title_r {
+    top: 80%;
+    left: 78%;
+  }
+  .c-contents.-f-view .c-contentsBox.-f-title.-build::after {
+    content: "新築分譲";
+  }
+  .c-contents.-f-view .c-contentsBox.-f-title.-build.-f-title_r {
+    top: 80%;
+    left: 78%;
+  }
   .c-contents.-f-view .c-contentsBox.-f-title.-location::after {
     content: "周辺環境";
   }
@@ -4654,13 +4675,13 @@ button.swiper-pagination-bullet {
   .c-flex.-col2_3 li {
     width: calc(33% - 15px);
   }
-  .c-flex.-col2_3 li:nth-child(1), .c-flex.-col2_3 li:nth-child(4), .c-flex.-col2_3 li:nth-child(7) {
+  .c-flex.-col2_3 li:nth-child(1), .c-flex.-col2_3 li:nth-child(4), .c-flex.-col2_3 li:nth-child(7), .c-flex.-col2_3 li:nth-child(10) {
     margin-right: 15px;
   }
-  .c-flex.-col2_3 li:nth-child(2), .c-flex.-col2_3 li:nth-child(5), .c-flex.-col2_3 li:nth-child(8) {
+  .c-flex.-col2_3 li:nth-child(2), .c-flex.-col2_3 li:nth-child(5), .c-flex.-col2_3 li:nth-child(8), .c-flex.-col2_3 li:nth-child(11) {
     margin: 0 7.5px;
   }
-  .c-flex.-col2_3 li:nth-child(3), .c-flex.-col2_3 li:nth-child(6), .c-flex.-col2_3 li:nth-child(9) {
+  .c-flex.-col2_3 li:nth-child(3), .c-flex.-col2_3 li:nth-child(6), .c-flex.-col2_3 li:nth-child(9), .c-flex.-col2_3 li:nth-child(12) {
     margin-left: 15px;
   }
 }
@@ -4799,6 +4820,60 @@ button.swiper-pagination-bullet {
   .c-flex.-shop-information_col3 li:nth-child(3) {
     width: 82%;
   }
+}
+
+.c-tabArea {
+  margin: auto;
+  text-align: center;
+}
+.c-tabArea input[name=t-01] {
+  display: none;
+}
+.c-tabArea .tab-content {
+  display: none;
+  margin: auto;
+  clear: both;
+  opacity: 0;
+  overflow: hidden;
+}
+.c-tabArea .tab-content .tab-content-img img {
+  width: 100%;
+  height: auto;
+}
+.c-tabArea #no1:checked ~ #no1-content,
+.c-tabArea #no2:checked ~ #no2-content,
+.c-tabArea #no3:checked ~ #no3-content,
+.c-tabArea #no4:checked ~ #no4-content {
+  position: inherit;
+  display: block !important;
+  z-index: 1;
+  opacity: 1;
+  transition: all 1s ease;
+}
+.c-tabArea.-ver01 .tab-item {
+  pointer-events: none;
+  width: 24.2%;
+  display: inline-block;
+  background: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #707070;
+}
+@media (width >= 768px) {
+  .c-tabArea.-ver01 .tab-item {
+    width: 24.7%;
+  }
+}
+.c-tabArea.-ver01 input:checked + .tab-item {
+  pointer-events: auto;
+  border-top: 1px solid #707070;
+  border-left: 1px solid #707070;
+  border-right: 1px solid #707070;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 2px -2px 2px 0px rgba(149, 149, 149, 0.13);
+  border-radius: 3px 3px 0 0;
+  transition: all 0.3s ease;
 }
 
 html {

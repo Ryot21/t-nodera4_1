@@ -230,7 +230,20 @@
 						&::after{content: "自由設計";}
 						&.-f-title_r{left: 80%;}
 					}
-					&.-equipment{&::after{content: "設備・仕様";}}
+					&.-equipment{
+						&::after{content: "設備・仕様";}
+						&.-f-title_r{
+							top: 80%;
+							left: 78%;
+						}
+					}
+					&.-build{
+						&::after{content: "新築分譲";}
+						&.-f-title_r{
+							top: 80%;
+							left: 78%;
+						}
+					}
 					&.-location{&::after{content: "周辺環境";}}
 
 				}
