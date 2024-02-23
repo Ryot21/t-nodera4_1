@@ -39,8 +39,7 @@
     &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
     &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}
     &.-owner{&::before{content: "OWNER VOICE"; white-space: nowrap;}}
-
-
+    &.-gallery{&::before{content: "Gallery"; white-space: nowrap;}}
 
 
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}
