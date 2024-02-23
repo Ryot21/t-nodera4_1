@@ -464,7 +464,7 @@ p.Top::before, p.concept::before, p.plan::before, p.Grallery::before, p.Location
 }
 @media (width >= 768px) {
   p.Top::before, span.Top::before, a.Top::before {
-    background: #3b3b3b;
+    background: black;
     width: 50%;
   }
 }
@@ -588,7 +588,7 @@ p.Location::after, span.Location::after, a.Location::after {
 @media (width >= 768px) {
   p.Information::before, span.Information::before, a.Information::before {
     left: 0;
-    background: #3b3b3b;
+    background: black;
     width: 96%;
   }
 }
@@ -2823,7 +2823,7 @@ button.swiper-pagination-bullet {
   transform: translateX(-50%);
   width: 100vw;
   height: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 .c-header__popArea {
   width: 100%;
@@ -2886,7 +2886,7 @@ button.swiper-pagination-bullet {
   transform: translate(-50%, -50%);
   height: 40%;
   width: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 .c-header__popArea .c-header__lists li.c-header__contactArea::after {
   content: "";
@@ -2896,7 +2896,7 @@ button.swiper-pagination-bullet {
   transform: translate(-50%, -50%);
   height: 1px;
   width: 98%;
-  background: #3b3b3b;
+  background: black;
 }
 .c-header__navArea .c-header__navLists {
   height: 100%;
@@ -2926,7 +2926,7 @@ button.swiper-pagination-bullet {
     transform: translateY(-50%);
     height: 100%;
     width: 1px;
-    background: #3b3b3b;
+    background: black;
   }
   .c-header__navArea .c-header__navLists li::after {
     content: "";
@@ -2936,7 +2936,7 @@ button.swiper-pagination-bullet {
     transform: translateY(-50%);
     height: 100%;
     width: 1px;
-    background: #3b3b3b;
+    background: black;
   }
   .c-header__navArea .c-header__navLists li a {
     display: block;
@@ -3005,7 +3005,7 @@ button.swiper-pagination-bullet {
   transform: translateX(-50%);
   width: 100vw;
   height: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 .c-footer__contactArea .c-footer__contactLists {
   position: relative;
@@ -3020,7 +3020,7 @@ button.swiper-pagination-bullet {
   transform: translateX(-50%);
   width: 100vw;
   height: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 .c-footer__contactArea .c-footer__contactLists::after {
   content: "";
@@ -3030,7 +3030,7 @@ button.swiper-pagination-bullet {
   transform: translateX(-50%);
   width: 100vw;
   height: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 .c-footer__contactArea .c-footer__contactLists li {
   position: relative;
@@ -3057,7 +3057,7 @@ button.swiper-pagination-bullet {
   transform: translateY(-50%);
   height: 100%;
   width: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 .c-footer__contactArea .c-footer__contactLists li::after {
   content: "";
@@ -3067,7 +3067,7 @@ button.swiper-pagination-bullet {
   transform: translateY(-50%);
   height: 100%;
   width: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 .c-footer__contactArea .c-footer__contactLists li a {
   display: block;
@@ -3104,7 +3104,7 @@ button.swiper-pagination-bullet {
   transform: translateY(-50%);
   height: 40%;
   width: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 @media (width >= 768px) {
   .c-footer__navArea .c-footer__navLists li:first-child::before {
@@ -3120,7 +3120,7 @@ button.swiper-pagination-bullet {
     transform: translateY(-50%);
     height: 40%;
     width: 1px;
-    background: #3b3b3b;
+    background: black;
   }
 }
 .c-footer__navArea .c-footer__navLists li::after {
@@ -3131,7 +3131,7 @@ button.swiper-pagination-bullet {
   transform: translateY(-50%);
   height: 40%;
   width: 1px;
-  background: #3b3b3b;
+  background: black;
 }
 @media (width >= 768px) {
   .c-footer__navArea .c-footer__navLists li::after {
@@ -3303,7 +3303,7 @@ button.swiper-pagination-bullet {
   height: 3px;
   width: 33px;
   border-radius: 3px;
-  background: #3b3b3b;
+  background: black;
   cursor: pointer;
 }
 @media (width >= 768px) {
@@ -3340,7 +3340,7 @@ button.swiper-pagination-bullet {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #3b3b3b;
+  background: black;
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
@@ -3479,7 +3479,7 @@ button.swiper-pagination-bullet {
   align-items: center;
   height: 100px;
   margin: auto;
-  border: 1px solid #3b3b3b;
+  border: 1px solid black;
 }
 @media (width >= 768px) {
   .c-hnav__contactArea {
@@ -3523,7 +3523,7 @@ button.swiper-pagination-bullet {
   transform: translate(-50%, -50%);
   height: 1px;
   width: 98%;
-  background: #3b3b3b;
+  background: black;
 }
 .c-hnav__contactArea.-grayOutItem {
   pointer-events: none;
@@ -3546,6 +3546,7 @@ button.swiper-pagination-bullet {
   position: relative;
 }
 .navItem_main {
+  color: #b5142c;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -3559,6 +3560,7 @@ button.swiper-pagination-bullet {
   }
 }
 .navItem_main02 {
+  color: #b5142c;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -3572,6 +3574,7 @@ button.swiper-pagination-bullet {
   }
 }
 .navItem_sub {
+  color: #636363;
   position: absolute;
   top: 65%;
   left: 50%;
@@ -4421,7 +4424,7 @@ button.swiper-pagination-bullet {
   left: 50%;
   transform: translateX(-50%) scaleY(0.75);
   width: 100%;
-  color: #3b3b3b;
+  color: black;
 }
 .c-contents_subTitle.-borderBtm.-dot::before {
   border-bottom: 3px dotted;
@@ -4434,6 +4437,7 @@ button.swiper-pagination-bullet {
   position: relative;
 }
 .contactItem_main {
+  color: #b5142c;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -5011,7 +5015,7 @@ button:hover {
 @media (768px >= width) {
   .c-btn-fixed {
     border: 1px solid #b5142c;
-    box-shadow: 0 2px 4px #3b3b3b;
+    box-shadow: 0 2px 4px black;
     transform: translateX(-50%);
   }
 }
@@ -5089,7 +5093,7 @@ button:hover {
   height: 4rem;
   line-height: 3.5rem;
   background: white;
-  border: 1px solid #3b3b3b;
+  border: 1px solid black;
   box-shadow: 2px 3px 5px 0px rgba(59, 59, 59, 0.3294117647);
   cursor: pointer;
   transition: all 0.5s;
@@ -5111,7 +5115,7 @@ button:hover {
 --------------------------------------------------------------------------------*/
 a {
   transition: 0.3s;
-  color: #3b3b3b;
+  color: black;
 }
 
 .c-link.-nav {
@@ -5266,7 +5270,7 @@ a {
 }
 .swiper .swiper-wrapper .swiper-slide a {
   display: block;
-  color: #3b3b3b;
+  color: black;
   background: #ffffff;
   font-weight: bold;
   overflow: hidden;
@@ -5276,13 +5280,13 @@ a {
 }
 @media (768px >= width) {
   .swiper .swiper-wrapper .swiper-slide a img {
-    color: #3b3b3b;
+    color: black;
     margin-right: 9vw;
   }
 }
 @media (768px >= width) {
   .swiper .swiper-wrapper .swiper-slide a img::after {
-    background: #3b3b3b;
+    background: black;
   }
 }
 .swiper .swiper-wrapper .swiper-slide a:hover {
@@ -5347,11 +5351,11 @@ a {
 .swiper.swiperThumbnail .swiper-pagination-bullet-active {
   width: 50px;
   background: #ebebeb !important;
-  border: 1px solid #3b3b3b !important;
+  border: 1px solid black !important;
 }
 @media (width >= 768px) {
   .swiper.swiperThumbnail .swiper-pagination-bullet-active {
-    background: #3b3b3b !important;
+    background: black !important;
   }
 }
 .swiper.swiper-Build, .swiper.swiper-Video {
@@ -5398,11 +5402,11 @@ a {
 .swiper.swiper-Build .swiper-pagination-bullet-active, .swiper.swiper-Video .swiper-pagination-bullet-active {
   width: 50px;
   background: #ebebeb;
-  border: 1px solid #3b3b3b;
+  border: 1px solid black;
 }
 @media (width >= 768px) {
   .swiper.swiper-Build .swiper-pagination-bullet-active, .swiper.swiper-Video .swiper-pagination-bullet-active {
-    background: #3b3b3b;
+    background: black;
   }
 }
 .swiper .swiper-button-prev::after,

@@ -252,6 +252,7 @@
 .navItem{
 	position: relative;
 	&_main{
+		color: $site-color02;
 		position: absolute;
 		top: 35%;
 		left: 50%;
@@ -261,6 +262,7 @@
 		@include min(768){top: 33%;}
 	}
 	&_main02{
+		color: $site-color02;
 		position: absolute;
 		top: 35%;
 		left: 50%;
@@ -270,6 +272,7 @@
 		@include min(768){top: 40%;}
 	}
 	&_sub{
+		color: $main-color--Dgray;
 		position: absolute;
 		top: 65%;
 		left: 50%;
