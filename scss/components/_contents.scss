@@ -205,7 +205,9 @@
 							top: 120%;
 							left: 50%;
 							transform: translate(-50%,-50%);
+							width: 100%;
 							font-size: 14px;
+							text-align: center;
 						}
 					}
 					// タイトル > 右下
@@ -217,8 +219,8 @@
 							top: 120%;
 							left: 50%;
 							transform: translate(-50%,-50%);
-							font-size: 14px;
 							width: 100%;
+							font-size: 14px;
 							text-align: center;
 						}
 					}
@@ -244,7 +246,13 @@
 							left: 78%;
 						}
 					}
-					&.-location{&::after{content: "周辺環境";}}
+					&.-location{
+						&::after{content: "周辺環境";}
+						&.-f-title_r{
+							top: 80%;
+							left: 78%;
+						}
+					}
 
 				}
 				@include min(768){// tb

@@ -620,6 +620,18 @@ span.-block {
 		*基本縦方向の幅は、下方側で調整すること。
 		*アンカーリンクの表示調整用には「paddig-top」を使用すること。
 ------------------------------------------------------------------------ */
+@media (width >= 768px) {
+  .mg0 {
+    margin: 0 !important;
+  }
+}
+
+@media (768px >= width) {
+  .mg0s {
+    margin: 0 !important;
+  }
+}
+
 @media (768px >= width) {
   .mgb-20s {
     margin-bottom: -20% !important;
@@ -3024,13 +3036,11 @@ button.swiper-pagination-bullet {
   position: relative;
   width: 50%;
   height: auto;
-  padding: 5% 0;
   transition: 0.5s all;
 }
 @media (width >= 768px) {
   .c-footer__contactArea .c-footer__contactLists li {
     width: 25%;
-    padding: 4% 0;
   }
 }
 .c-footer__contactArea .c-footer__contactLists li:hover {
@@ -3061,6 +3071,12 @@ button.swiper-pagination-bullet {
 }
 .c-footer__contactArea .c-footer__contactLists li a {
   display: block;
+  padding: 12% 0;
+}
+@media (width >= 768px) {
+  .c-footer__contactArea .c-footer__contactLists li a {
+    padding: 20% 0;
+  }
 }
 .c-footer__contactArea .c-footer__contactLists li.-grayOutItem {
   pointer-events: none;
@@ -3190,8 +3206,10 @@ button.swiper-pagination-bullet {
 .c-footer__btnArea label.popup:hover {
   color: #ffffff !important;
   background: #b5142c !important;
-  border-radius: 30px;
   box-shadow: 3px 3px 10px rgba(133, 133, 133, 0.295);
+}
+.c-footer__btnArea label.popup.-r:hover {
+  border-radius: 30px;
 }
 .c-footer__shopArea {
   width: 60%;
@@ -3346,7 +3364,7 @@ button.swiper-pagination-bullet {
   .c-hnav__content {
     width: 29%;
     max-width: 230px;
-    padding: 2% 3%;
+    padding: 2% 2.5% 2% 2.5%;
     background: #ffffff;
   }
 }
@@ -3372,7 +3390,6 @@ button.swiper-pagination-bullet {
 }
 .c-hnav__content li a {
   position: relative;
-  display: inline-block;
 }
 .c-hnav__content li a::before {
   content: "";
@@ -3889,7 +3906,9 @@ button.swiper-pagination-bullet {
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
     font-size: 14px;
+    text-align: center;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r {
     top: 82%;
@@ -3900,8 +3919,8 @@ button.swiper-pagination-bullet {
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
     width: 100%;
+    font-size: 14px;
     text-align: center;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-concept::after {
@@ -3935,6 +3954,10 @@ button.swiper-pagination-bullet {
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-location::after {
     content: "周辺環境";
+  }
+  .c-contents.-f-view .c-contentsBox.-f-title.-location.-f-title_r {
+    top: 80%;
+    left: 78%;
   }
 }
 @media (width >= 768px) {
@@ -4232,8 +4255,8 @@ button.swiper-pagination-bullet {
   background: url(../images/logo/page-title-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   position: absolute;
   top: 50%;
   left: 0%;
@@ -4243,11 +4266,26 @@ button.swiper-pagination-bullet {
   .c-contents_MainTitle.-icon::after {
     top: 53%;
     left: 0;
+    width: 20px;
+    height: 20px;
   }
 }
 @media (width >= 1400px) {
   .c-contents_MainTitle.-icon::after {
     top: 56%;
+  }
+}
+.c-contents_MainTitle.-icon.-row02::after {
+  top: 30%;
+}
+@media (width >= 768px) {
+  .c-contents_MainTitle.-icon.-row02::after {
+    top: 27%;
+  }
+}
+@media (768px >= width) {
+  .c-contents_MainTitle.-icon.-row02_s::after {
+    top: 30%;
   }
 }
 
@@ -4314,6 +4352,19 @@ button.swiper-pagination-bullet {
     padding-left: 12%;
   }
 }
+.c-contents_subTitle.-stationBox.-ver02 {
+  padding-left: 17%;
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-stationBox.-ver02 {
+    padding-left: 15%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents_subTitle.-stationBox.-ver02 {
+    padding-left: 12%;
+  }
+}
 .c-contents_subTitle.-stationBox.-s_1::after {
   content: "西武池袋線";
   top: 42%;
@@ -4358,11 +4409,11 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents_subTitle.-borderBtm {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 @media (width >= 768px) {
   .c-contents_subTitle.-borderBtm {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
 }
 .c-contents_subTitle.-borderBtm::before {
@@ -4370,7 +4421,7 @@ button.swiper-pagination-bullet {
   left: 50%;
   transform: translateX(-50%) scaleY(0.75);
   width: 100%;
-  color: #e996a1;
+  color: #3b3b3b;
 }
 .c-contents_subTitle.-borderBtm.-dot::before {
   border-bottom: 3px dotted;
@@ -4530,6 +4581,22 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-flex.-col1_2.-r li.img {
     width: calc(65% - 15px);
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col1_2.-pc7_3 li:nth-child(1) {
+    width: calc(60% - 15px);
+  }
+  .c-flex.-col1_2.-pc7_3 li:nth-child(2) {
+    width: calc(40% - 15px);
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col1_2.-pc-auto li:nth-child(1) {
+    width: auto;
+  }
+  .c-flex.-col1_2.-pc-auto li:nth-child(2) {
+    width: 60%;
   }
 }
 .c-flex.-col2_2 li {
