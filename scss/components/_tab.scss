@@ -35,10 +35,8 @@
         transition: all 1s ease;
     }
 
-    &.-ver01{
+    &.-col4{
         .tab-item{
-            pointer-events: none;
-
             width: 24.2%;
             display: inline-block;
             background: $main-color--w;

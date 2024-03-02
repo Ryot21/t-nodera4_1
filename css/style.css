@@ -320,6 +320,11 @@ h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-
   }
 }
 @media (768px >= width) {
+  h1.s-L.-s13, h2.s-L.-s13, h3.s-L.-s13, h4.s-L.-s13, h5.s-L.-s13, h6.s-L.-s13, p.s-L.-s13, a.s-L.-s13, span.s-L.-s13, label.s-L.-s13, button.s-L.-s13 {
+    font-size: 1.3rem;
+  }
+}
+@media (768px >= width) {
   h1.s-L.-s14, h2.s-L.-s14, h3.s-L.-s14, h4.s-L.-s14, h5.s-L.-s14, h6.s-L.-s14, p.s-L.-s14, a.s-L.-s14, span.s-L.-s14, label.s-L.-s14, button.s-L.-s14 {
     font-size: 1.4rem;
   }
@@ -4944,8 +4949,7 @@ button.swiper-pagination-bullet {
   opacity: 1;
   transition: all 1s ease;
 }
-.c-tabArea.-ver01 .tab-item {
-  pointer-events: none;
+.c-tabArea.-col4 .tab-item {
   width: 24.2%;
   display: inline-block;
   background: #ffffff;
@@ -4955,11 +4959,11 @@ button.swiper-pagination-bullet {
   border-bottom: 1px solid #707070;
 }
 @media (width >= 768px) {
-  .c-tabArea.-ver01 .tab-item {
+  .c-tabArea.-col4 .tab-item {
     width: 24.7%;
   }
 }
-.c-tabArea.-ver01 input:checked + .tab-item {
+.c-tabArea.-col4 input:checked + .tab-item {
   pointer-events: auto;
   border-top: 1px solid #707070;
   border-left: 1px solid #707070;
