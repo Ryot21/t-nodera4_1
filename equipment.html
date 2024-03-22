@@ -62,9 +62,9 @@
 				<li class=""><a class="s-SS -ws-n -left"              href="plan.html"><span class="s-M pdr5 pdr4s">FREEPLAN</span>自由設計</a></li>
 				<li class=""><a class="s-SS -ws-n -left"              href="build.html"><span class="s-M pdr5 pdr4s">BUILDHOUSE</span>新築分譲</a></li>
                 <li class="-active"><a class="s-SS -ws-n -left"       href="equipment.html"><span class="s-M pdr5 pdr4s">EQUIPMENT</span>設備・仕様</a></li>
-                <li class=""><a class="s-SS -ws-n -left"              href="location.html"><span class="s-M pdr5 pdr4s">LOCATION</span>周辺環境</a></li>
+                <li class="mgb15 mgb15s"><a class="s-SS -ws-n -left"  href="location.html"><span class="s-M pdr5 pdr4s">LOCATION</span>周辺環境</a></li>
                 <!-- <li class=""><a class="s-SS -ws-n -left"              href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li> -->
-                <li class="mgb15 mgb15s"><label class="popup popup-open s-SS -ws-n -left" for="popup"><span class="s-M pdr5 pdr4s">OVERVIEW</span>物件概要</label></li>
+                <!-- <li class="mgb15 mgb15s"><label class="popup popup-open s-SS -ws-n -left" for="popup"><span class="s-M pdr5 pdr4s">OVERVIEW</span>物件概要</label></li> -->
 
                 <!-- 物件概要はここには設置しないこと -->
                 <div class="c-hnav__contactArea">
@@ -418,23 +418,49 @@
                 </ul>
             </nav>
         </div>
-        <div class="c-footer__btnArea mgb4 mgb10s">
-            <label class="s-M popup popup-open" for="popup">物件概要はこちら</label>
-            <!-- 01.物件概要 -->
-            <input type="checkbox" id="popup" >
-            <label class="popup-overlay" for="popup"></label>
-            <div class="popup-window">
-                <!-- 閉じるボタン -->
-                <label class="popup-close" for="popup">
-                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                        <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                    </svg>
-                </label>
-                <!-- iframe -->
-                <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712117780"></iframe>
-            </div>
-            
+        <div class="c-footer__btnArea -col2 mgb4 mgb10s">
+            <!-- 物件概要ボタン -->
+            <ul class="c-flex -col2_2">
+                <li>
+                    <label class="s-S popup -color01 popup-open" for="popup01">
+                        <span class="s-ML -s14 -center -ls-2">新築戸建</span><br>物件概要はこちら
+                    </label>
+                    <!-- 01.物件概要 > 新地戸建 -->
+                    <input type="checkbox" id="popup01" >
+                    <label class="popup-overlay" for="popup01"></label>
+                    <div class="popup-window">
+                        <!-- 閉じるボタン -->
+                        <label class="popup-close" for="popup01">
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                            </svg>
+                        </label>
+                        <!-- iframe -->
+                        <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712817676"></iframe>
+                    </div>
+                </li>
+                <li>
+                    <label class="s-S popup -color02 popup-open" for="popup02">
+                        <span class="s-ML -s14 -center -ls-n">建築条件付き土地</span><br>物件概要はこちら
+                    </label>
+                    <!-- 02.物件概要 > 建築条件付き土地 -->
+                    <input type="checkbox" id="popup02" >
+                    <label class="popup-overlay" for="popup02"></label>
+                    <div class="popup-window">
+                        <!-- 閉じるボタン -->
+                        <label class="popup-close" for="popup02">
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                            </svg>
+                        </label>
+                        <!-- iframe -->
+                        <iframe id="inlineFrame02" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712117780"></iframe>
+                    </div>
+                </li>
+            </ul>
+            <!-- //物件概要ボタン -->
         </div>
         <div class="c-footer__shopArea">
             <ul class="c-footer__shopFlex">

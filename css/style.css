@@ -190,6 +190,24 @@ h1.-lh-3, h2.-lh-3, h3.-lh-3, h4.-lh-3, h5.-lh-3, h6.-lh-3, p.-lh-3, a.-lh-3, sp
     line-height: 3;
   }
 }
+h1.-ls-n, h2.-ls-n, h3.-ls-n, h4.-ls-n, h5.-ls-n, h6.-ls-n, p.-ls-n, a.-ls-n, span.-ls-n, label.-ls-n, button.-ls-n {
+  letter-spacing: normal;
+}
+h1.-ls-1, h2.-ls-1, h3.-ls-1, h4.-ls-1, h5.-ls-1, h6.-ls-1, p.-ls-1, a.-ls-1, span.-ls-1, label.-ls-1, button.-ls-1 {
+  letter-spacing: 0.1rem;
+}
+h1.-ls-2, h2.-ls-2, h3.-ls-2, h4.-ls-2, h5.-ls-2, h6.-ls-2, p.-ls-2, a.-ls-2, span.-ls-2, label.-ls-2, button.-ls-2 {
+  letter-spacing: 0.2rem;
+}
+h1.-ls-3, h2.-ls-3, h3.-ls-3, h4.-ls-3, h5.-ls-3, h6.-ls-3, p.-ls-3, a.-ls-3, span.-ls-3, label.-ls-3, button.-ls-3 {
+  letter-spacing: 0.3rem;
+}
+h1.-ls-4, h2.-ls-4, h3.-ls-4, h4.-ls-4, h5.-ls-4, h6.-ls-4, p.-ls-4, a.-ls-4, span.-ls-4, label.-ls-4, button.-ls-4 {
+  letter-spacing: 0.4rem;
+}
+h1.-ls-5, h2.-ls-5, h3.-ls-5, h4.-ls-5, h5.-ls-5, h6.-ls-5, p.-ls-5, a.-ls-5, span.-ls-5, label.-ls-5, button.-ls-5 {
+  letter-spacing: 0.5rem;
+}
 h1.-shadow, h2.-shadow, h3.-shadow, h4.-shadow, h5.-shadow, h6.-shadow, p.-shadow, a.-shadow, span.-shadow, label.-shadow, button.-shadow {
   filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;
 }
@@ -3202,35 +3220,81 @@ button.swiper-pagination-bullet {
     max-width: 300px;
   }
 }
+.c-footer__btnArea.-col2 {
+  width: 80%;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .c-footer__btnArea.-col2 {
+    width: 40%;
+    max-width: 450px;
+  }
+}
 .c-footer__btnArea label.popup {
   display: block;
   padding: 5% 0;
   text-align: center;
-  border: 1px solid #b5142c;
-  background: #b5142c;
   transition: 0.5s all;
 }
+.c-footer__btnArea label.popup span {
+  transition: 0.5s all;
+}
+.c-footer__btnArea label.popup.-r:hover {
+  border-radius: 30px;
+}
+.c-footer__btnArea label.popup.-color01 {
+  color: #ffffff;
+  border: 1px solid #e996a1;
+  background: #e996a1;
+}
 @media (width >= 768px) {
-  .c-footer__btnArea label.popup {
+  .c-footer__btnArea label.popup.-color01 {
+    color: #e996a1;
+    background: #ffffff;
+  }
+}
+.c-footer__btnArea label.popup.-color01 span {
+  color: #ffffff;
+}
+@media (width >= 768px) {
+  .c-footer__btnArea label.popup.-color01 span {
+    color: #e996a1;
+  }
+}
+.c-footer__btnArea label.popup.-color01:hover {
+  color: #ffffff !important;
+  background: #e996a1 !important;
+  box-shadow: 3px 3px 10px rgba(133, 133, 133, 0.295);
+}
+.c-footer__btnArea label.popup.-color01:hover span {
+  color: #ffffff !important;
+}
+.c-footer__btnArea label.popup.-color02 {
+  color: #ffffff;
+  border: 1px solid #b5142c;
+  background: #b5142c;
+}
+@media (width >= 768px) {
+  .c-footer__btnArea label.popup.-color02 {
     color: #b5142c;
     background: #ffffff;
   }
 }
-.c-footer__btnArea label.popup span {
+.c-footer__btnArea label.popup.-color02 span {
   color: #ffffff;
 }
 @media (width >= 768px) {
-  .c-footer__btnArea label.popup span {
+  .c-footer__btnArea label.popup.-color02 span {
     color: #b5142c;
   }
 }
-.c-footer__btnArea label.popup:hover {
+.c-footer__btnArea label.popup.-color02:hover {
   color: #ffffff !important;
   background: #b5142c !important;
   box-shadow: 3px 3px 10px rgba(133, 133, 133, 0.295);
 }
-.c-footer__btnArea label.popup.-r:hover {
-  border-radius: 30px;
+.c-footer__btnArea label.popup.-color02:hover span {
+  color: #ffffff !important;
 }
 .c-footer__shopArea {
   width: 60%;
@@ -5452,10 +5516,14 @@ a {
 }
 
 #popup,
+#popup01,
+#popup02,
 #popup-madori01 {
   display: none;
 }
 #popup:checked ~ .popup-overlay,
+#popup01:checked ~ .popup-overlay,
+#popup02:checked ~ .popup-overlay,
 #popup-madori01:checked ~ .popup-overlay {
   display: block;
   background-color: rgba(0, 0, 0, 0.4392156863);
@@ -5463,6 +5531,8 @@ a {
   opacity: 1;
 }
 #popup:checked ~ .popup-window,
+#popup01:checked ~ .popup-window,
+#popup02:checked ~ .popup-window,
 #popup-madori01:checked ~ .popup-window {
   display: block;
   z-index: 99999;
@@ -5507,7 +5577,9 @@ a {
   z-index: -1;
   opacity: 0;
 }
-.popup-window #inlineFrame {
+.popup-window #inlineFrame,
+.popup-window #inlineFrame01,
+.popup-window #inlineFrame02 {
   width: 100%;
   height: 100%;
 }

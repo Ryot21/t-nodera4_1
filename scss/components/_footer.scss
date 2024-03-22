@@ -206,32 +206,72 @@
 			width: 16%;
 			max-width: 300px;
 		}
+		&.-col2{
+			width: 80%;
+			margin: auto;
+			@include min(768){
+				width: 40%;
+				max-width: 450px;
+			}
+		}
 		label{
 			&.popup{
 				display: block;
 				padding: 5% 0;
 				text-align: center;
-				border: 1px solid $site-color02;
-				background: $site-color02;
 				transition: .5s all;
-				@include min(768){
-					color: $site-color02;
-					background: $main-color--w;
-				}
-				span{
-					color: $main-color--w;
-					@include min(768){
-						color: $site-color02;
-					}
-				}
-				&:hover{
-					color: $main-color--w !important;
-					background: $site-color02 !important;
-					box-shadow: 3px 3px 10px rgba(133, 133, 133, 0.295);
-				}
+				span{transition: .5s all;}
 				&.-r{
 					&:hover{
 						border-radius: 30px;
+					}
+				}
+				// &:hover{
+				// 	color: $main-color--w !important;
+				// 	background: $site-color02 !important;
+				// 	box-shadow: 3px 3px 10px rgba(133, 133, 133, 0.295);
+				// }
+				// カラー制御
+				&.-color01{
+					color: $main-color--w;
+					border: 1px solid $site-color01;
+					background: $site-color01;
+					@include min(768){
+						color: $site-color01;
+						background: $main-color--w;
+					}
+					span{
+						color: $main-color--w;
+						@include min(768){
+							color: $site-color01;
+						}
+					}
+					&:hover{
+						color: $main-color--w !important;
+						background: $site-color01 !important;
+						box-shadow: 3px 3px 10px rgba(133, 133, 133, 0.295);
+						span{color: $main-color--w !important;}
+					}
+				}
+				&.-color02{
+					color: $main-color--w;
+					border: 1px solid $site-color02;
+					background: $site-color02;
+					@include min(768){
+						color: $site-color02;
+						background: $main-color--w;
+					}
+					span{
+						color: $main-color--w;
+						@include min(768){
+							color: $site-color02;
+						}
+					}
+					&:hover{
+						color: $main-color--w !important;
+						background: $site-color02 !important;
+						box-shadow: 3px 3px 10px rgba(133, 133, 133, 0.295);
+						span{color: $main-color--w !important;}
 					}
 				}
 			}
